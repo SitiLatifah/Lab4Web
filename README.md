@@ -96,6 +96,7 @@ Selanjutnya membuat content artikel. Tambahkan HTML dan CSS berikut pada main co
 
 ## JAWABAN
 # 1. LAYOUT MENU ABOUT
+**Berikut Syntax HTML**
 ``` html
 <!DOCTYPE html>
 <html lang="en">
@@ -159,7 +160,7 @@ Selanjutnya membuat content artikel. Tambahkan HTML dan CSS berikut pada main co
 </body>
 </html>
 ```
-**Berikut Sintaks CSS** <br>
+**Berikut Syntax CSS** <br>
 
 ``` css
 /* Reset CSS */
@@ -238,8 +239,188 @@ footer {
 ![Screenshot (216)](https://user-images.githubusercontent.com/73010098/162575362-7e288994-474e-48a9-80f2-e71d9de37b75.png)
 ![Screenshot (217)](https://user-images.githubusercontent.com/73010098/162575365-1d61834f-d6a5-4100-b6b4-6418db383bad.png)
 
+## 2.LAYOUT MENU KONTAK
+**Berikut Syntax HTML**
+``` html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Sederhana HTML</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div id="container">    
 
 
+        <header>
+            <h1>Layout Sederhana</h1>
+        </header>
+     <nav>
+        <a href="home.html" class="active">Home</a>
+        <a href="artikel.html">Artikel</a>
+        <a href="about.html" class="active">About</a>
+        <a href="kontak.html" class="active">kontak</a>
+    </nav>
+    
+        <section id="hero"></section>
+        <section id="wrapper"></section>
+        <section id="main"></section>
+        <aside id="sidebar"></aside>
+ 
+ <!-- Menambahkan Main -->
+ <section id="hero">
+    <h1>CONTACT</h1>
+        <form action="proses.php" method="POST">
+            <fieldset>
+                <legend>Contact</legend>
+                <div class="form">
+                    <label for="nama">Nama</label>
+                    <input type="text" id="nama" placeholder="Masukan Nama">
+                </div>
+                <div class="form">
+                    <label for="email">E-Mail</label>
+                    <input type="email" id="email" placeholder="Masukan E-Mail">
+                </div>
+                <div class="form">
+                    <label for="pesan">Pesan</label>
+                    <textarea rows="13" placeholder="Masukan Pesan"></textarea>
+                </div>
+                    <button type="submit" class="btn btn-danger">Kirim</button>
+            </fieldset>
+        </form>
+ </section>
+
+</body>
+</html>
+```
+
+**Berikut Syntax CSS**
+``` css
+/* Reset CSS */
+
+* {
+margin: 0;
+padding: 0; 
+}
+    
+    body {
+        line-height:1; 
+        font-size:100%; 
+        font-family:'Open Sans', sans-serif;
+        color:#5a5a5a; 
+    }
+    #container { 
+        width: 980px;
+        margin: 0 auto; 
+        box-shadow: 0 0 1em #cccccc; 
+    }
+
+/* header */
+
+    header { 
+        padding: 20px; 
+    }
+    header h1 { 
+        margin: 20px 10px; 
+        color: #b5b5b5; 
+    }
+
+/* navigasi */
+    nav {
+        display: block;
+        background-color: #1f5faa;
+    }
+    nav a {
+        padding: 15px 30px;
+        display: inline-block;
+        color: #ffffff;
+        font-size: 14px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    nav a.active,
+    nav a:hover {
+        background-color: #2b83ea;
+    }
+
+/* Hero Panel */
+    #hero {
+        background-color: #e4e4e5;
+        padding: 20px 20px;
+        margin-bottom: 0px;
+    }
+    #hero h1 {
+        margin-bottom: 20px;
+        font-size: 35px;
+    }
+    #hero p {
+        margin-bottom: 20px; 
+        font-size: 18px;
+        line-height: 25px;
+    }
+    #legend {
+        text-align: center;
+        font-family: sans-serif;
+    }
+
+/* Input */
+input {
+    width: 99%;
+    font-family: 'Open Sans';
+}
+.form {
+    margin-top: 25px;
+    margin-left: 15px;
+    font-family: 'Open Sans';
+}
+label {
+    margin-left: 12px;
+    font-family: 'Open Sans';
+}
+input {
+    width: 97%;
+    padding: 10px 15px;
+    margin: 10px 10px;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+textarea {
+    width: 97%;
+    padding: 10px 15px;
+    margin: 10px 10px;
+    box-sizing: border-box;
+    font-family: 'Open Sans'; 
+}
+button[type=submit] {
+    margin-left: 25px;
+    padding: 10px 10px;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    background-color: #0a009b;
+    border: 1px solid #0057f8;
+    color: #fff;  
+    font-weight: bold;
+    font-family: 'Open Sans';
+}
+/* footer */
+footer {
+    clear:both;
+    background-color:#1d1d1d;
+    padding:20px;
+    color:#eee;
+ }
+ ```
+ ## OUTPUT
+ ![Screenshot (214)](https://user-images.githubusercontent.com/73010098/162575691-47ef7461-10fa-4e1d-9dc4-15912ef3bc7e.png)
+![Screenshot (215)](https://user-images.githubusercontent.com/73010098/162575693-8cafffa3-4a3e-4307-84d9-1e92254ac56c.png)
+
+ 
 
 
 
