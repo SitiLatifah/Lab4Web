@@ -95,9 +95,148 @@ Selanjutnya membuat content artikel. Tambahkan HTML dan CSS berikut pada main co
 ![image](https://user-images.githubusercontent.com/73010098/161433987-a8095563-79fe-4a15-96e9-91c269946e93.png)
 
 ## JAWABAN
-# 
+# 1. LAYOUT MENU ABOUT
+``` html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Sederhana HTML</title>
 
 
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+
+    <div id="container">    
+
+
+    <header>
+        <h1>Layout Sederhana</h1>
+    </header>
+ <nav>
+    <a href="home.html" class="active">Home</a>
+    <a href="artikel.html">Artikel</a>
+    <a href="about.html" class="active">About</a>
+    <a href="kontak.html">kontak</a>
+</nav>
+
+    <section id="hero"></section>
+    <section id="wrapper"></section>
+    <section id="main"></section>
+    <aside id="sidebar"></aside>
+
+
+<!-- MENAMBAHKAN WRAPPER -->
+<section id="wrapper">
+	<h1><center>PROFILE</center></h1>
+    <center>
+	<img src="foto.jpg" alt="" width="200">
+    </center>
+    <p></p>
+	<p>Perkenalkan nama saya Siti Latifah Saya bertempat tinggal di Cikarang Utara, Tempat Tanggal lahir 25 Juli 2002,
+	   saya lulusan dari SMK Annihayah Jurusan Multimedia tahun lulus 2020, Sekarang Saya berkuliah di Universitas Pelita Bangsa 
+	   Prodi Teknik jurusan Teknik Informatika.</p>
+
+    <p><b>SKILL</b></p>
+    <li>Editing Video</li>
+    <li>Desain Grafis</li>
+    <li>Editing Photo</li>
+    
+	<a href="about.html" class="active">About</a>
+</section>
+	
+	<footer>
+    <p>&copy; 2021 - Universitas Pelita Bangsa</p>
+    </footer>
+
+</div>
+</body>
+</html>
+```
+**Berikut Sintaks CSS** <br>
+
+``` css
+/* Reset CSS */
+
+* {
+margin: 0;
+padding: 0; 
+}
+    
+    body {
+        line-height:1; 
+        font-size:100%; 
+        font-family:'Open Sans', sans-serif;
+        color:#5a5a5a; 
+    }
+    #container { 
+        width: 980px;
+        margin: 0 auto; 
+        box-shadow: 0 0 1em #cccccc; 
+    }
+
+/* header */
+
+    header { 
+        padding: 20px; 
+    }
+    header h1 { 
+        margin: 20px 10px; 
+        color: #b5b5b5; 
+    }
+
+/* navigasi */
+    nav {
+        display: block;
+        background-color: #1f5faa;
+    }
+    nav a {
+        padding: 15px 30px;
+        display: inline-block;
+        color: #ffffff;
+        font-size: 14px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    nav a.active,
+    nav a:hover {
+        background-color: #2b83ea;
+    }
+    
+ /* Wrapper */
+    #wrapper {
+        background-color: #e4e4e5;
+        padding: 20px 20px;
+        margin-bottom: 0px;
+    }
+    #wrapper h1 {
+        margin-top: 0%;
+        margin-bottom: 10px;
+        font-size: 35px;
+    }
+    #wrapper p {
+        margin-bottom: 20px; 
+        font-size: 18px;
+        line-height: 25px; 
+    }
+   /* footer */
+footer {
+    clear:both;
+    background-color:#1d1d1d;
+    padding:20px;
+    color:#eee;
+   }
+```
+
+## OUTPUT
+![Screenshot (216)](https://user-images.githubusercontent.com/73010098/162575362-7e288994-474e-48a9-80f2-e71d9de37b75.png)
+![Screenshot (217)](https://user-images.githubusercontent.com/73010098/162575365-1d61834f-d6a5-4100-b6b4-6418db383bad.png)
 
 
 
